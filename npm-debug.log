@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\laragon\\bin\\nodejs\\node.exe',
+1 verbose cli   'C:\\laragon\\bin\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle Customer-app@~prewatch: Customer-app@
+6 silly lifecycle Customer-app@~prewatch: no script for prewatch, continuing
+7 info lifecycle Customer-app@~watch: Customer-app@
+8 verbose lifecycle Customer-app@~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle Customer-app@~watch: PATH: C:\laragon\bin\nodejs\node_modules\npm\bin\node-gyp-bin;F:\work\customer-app\node_modules\.bin;C:\laragon\bin\nodejs;C:\Users\Ankita\AppData\Roaming\npm;C:\laragon\bin\cmder\vendor\telnet;C:\laragon\bin\cmder\vendor\putty;C:\Users\Ankita\AppData\Roaming\Composer\vendor\bin;C:\laragon\bin\mysql\mariadb-10.1.9\bin;C:\laragon\bin\php\php-7.0.10-Win32-VC14-x86;C:\laragon\bin\composer;C:\laragon\bin\apache\httpd-2.4.23-win32-VC14\bin;C:\laragon\bin\redis\redis-2.8.17;C:\laragon\bin\memcached\memcached-1.4.5;C:\laragon\bin\nodejs;C:\laragon\bin\nginx\nginx-1.10.1;C:\laragon\bin\notepad++;C:\laragon\bin\telnet;C:\laragon\bin\sublime;C:\laragon\bin\ngrok;C:\laragon\bin\sendmail;C:\laragon\bin\winscp;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\usr\bin;C:\laragon\bin\git\mingw32\bin;C:\laragon\bin;C:\laragon\usr\bin;C:\laragon\bin\putty;C:\laragon\bin\cmder\bin;C:\laragon\bin\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\laragon\bin\cmder\vendor\conemu-maximus5;C:\laragon\bin\cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Users\Ankita\AppData\Roaming\npm;C:\laragon\bin\cmder\;
+10 verbose lifecycle Customer-app@~watch: CWD: F:\work\customer-app
+11 silly lifecycle Customer-app@~watch: Args: [ '/d /s /c', 'ionic-app-scripts watch' ]
+12 silly lifecycle Customer-app@~watch: Returned: code: 1  signal: null
+13 info lifecycle Customer-app@~watch: Failed to exec watch script
+14 verbose stack Error: Customer-app@ watch: `ionic-app-scripts watch`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\laragon\bin\nodejs\node_modules\npm\lib\utils\lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\laragon\bin\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid Customer-app@
+16 verbose cwd F:\work\customer-app
+17 error Windows_NT 10.0.10240
+18 error argv "C:\\laragon\\bin\\nodejs\\node.exe" "C:\\laragon\\bin\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+19 error node v6.6.0
+20 error npm  v3.10.3
+21 error code ELIFECYCLE
+22 error Customer-app@ watch: `ionic-app-scripts watch`
+22 error Exit status 1
+23 error Failed at the Customer-app@ watch script 'ionic-app-scripts watch'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the Customer-app package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     ionic-app-scripts watch
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs Customer-app
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls Customer-app
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
