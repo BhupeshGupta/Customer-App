@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+    <ion-toolbar class="left_toolbar">
+        <div class="admin_outer">
+            <div class="admin"> <img src="../../assets/img/admin.jpg"> </div>
+            <ion-title class="right">
+                <p class="main_heading">Admin</p>
+                <p>demo@gmail.com</p>
+                <p>phone No.</p>
+            </ion-title>
+        </div>
+        <div class="company_detail">
+            <p>{{name}}</p>
+            <button class="fa fa-angle-down right toggle_btn"></button>
+            <!--           <button class="fa fa-angle-down right toggle_btn" (click)="edited = !edited"></button>-->
+        </div>
+    </ion-toolbar>
+    <ion-content class="left_bg">
+        <ion-list>
+            <!--           <ion-list [hidden]="edited">-->
+            <button ion-item *ngFor="let p of pages" (click)="openPage(p)"> <span class="left_icons"><i [className]="p.icon"></i> </span> <span class="title_text">{{p.title}}</span> <span class=right_arrow><i class="fa fa-angle-right"></i></span> </button>
+        </ion-list>
+        <ion-list>
+            <!--        <ion-list [hidden]="!edited">-->
+            <button ion-item *ngFor="let p of company" (click)="openPage(p)"> <span class="left_icons"><i [className]="p.icon"></i> </span> <span class="title_text">{{p.title}}</span> </button>
+        </ion-list>
+    </ion-content>
+</ion-menu> Disable swipe-to-go-back because it's poor UX to combine STGB with side menus
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

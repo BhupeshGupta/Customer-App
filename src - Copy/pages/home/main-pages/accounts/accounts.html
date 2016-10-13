@@ -1,0 +1,28 @@
+<ion-header class="page">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Account</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="main_content">
+    <ion-list>
+        <ion-item class="header">
+            <div class="col">Date</div>
+            <div class="col">Narration</div>
+            <div class="col">Debit</div>
+            <div class="col">Credit</div>
+            <div class="col">Balance</div>
+        </ion-item>
+        <div class="stetement_dtl">
+            <div ion-item *ngFor="let item of items" (click)="itemTapped($event, item)" closs="row">
+                <div class="col">8/6/2016</div>
+                <div class="col">Against Invoice Id 16007917</div>
+                <div class="col">110954.78</div>
+                <div class="col">0</div>
+                <div class="col">₹ 825,757.77</div>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>

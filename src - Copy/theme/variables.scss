@@ -1,0 +1,599 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+@import "ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+$text-color: #000;
+$background-color: #fff;
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( primary: #387ef5, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, favorite: #69BB7B);
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";
+$colors: ( primary: #387ef5, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, favorite: #69BB7B);
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
+.center {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    ion-list {
+        .input-has-focus {
+            border: 0 !important;
+            box-shadow: none !important;
+            form {
+                padding: 0 20px;
+            }
+        }
+    }
+    ion-col {
+        padding: 0;
+    }
+}
+
+.item-input.input-has-focus .item-inner {
+    box-shadow: none !important;
+}
+
+p {
+    margin: 0;
+}
+
+.bg {
+    background: url(../assets/img/bg-wedding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.main_logo {
+    padding: 10px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    margin: 20px auto 0;
+    display: block;
+    background: rgba(227, 176, 103, 0.5);
+    img {
+        max-width: 140px;
+        margin: 0 auto;
+        display: block;
+        vertical-align: middle;
+        margin-top: 6px;
+        padding: 10px;
+    }
+}
+
+.home-page {
+    ion-navbar {
+        background: #333 !important;
+        .toolbar-title {
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+ion-navbar .toolbar-background {
+    background: rgba(251, 106, 0, 0.7);
+}
+
+ion-navbar {
+    min-height: 50px;
+    .toolbar-title {
+        color: #fff;
+    }
+    padding: 0 !important;
+}
+
+ion-navbar button {
+    color: #fff !important;
+}
+
+ion-app {
+    ion-menu {
+        .left_toolbar {
+            min-height: auto;
+            .toolbar-content {
+                float: left;
+                width: 100%;
+                padding: 15px 15px 0 15px;
+                position: absolute;
+                top: 0;
+                .admin_outer {
+                    margin-bottom: 20px;
+                    .admin {
+                        border-radius: 50%;
+                        text-align: left;
+                        float: left;
+                        img {
+                            border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+                ion-title {
+                    font-family: open sans;
+                    .toolbar-title {
+                        .main_heading {
+                            font-size: 14px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-weight: 400;
+                        }
+                        p {
+                            color: #ccc;
+                            margin: 0;
+                            font-size: 11px;
+                            text-shadow: none;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+                .company_detail {
+                    margin: 10px 0 0 px 0;
+                    float: left;
+                    position: relative;
+                    width: 100%;
+                    p {
+                        display: inline-block;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: 'montserratlight';
+                    }
+                    .toggle_btn {
+                        background: transparent none repeat scroll 0 0 !important;
+                        display: block;
+                        float: right;
+                        height: 20px;
+                        left: 0;
+                        margin: 0;
+                        padding: 0 0px 0 0 !important;
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                        top: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title_text {
+    display: inline-block;
+    float: left;
+}
+
+.main_heading {
+    margin: 30px 0 20px 0;
+    display: block;
+    h2 {
+        color: #BE1400;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 34px;
+    }
+}
+
+//ion-list {
+//  //    .button {
+//  //    width: 92px;
+//  //    height: 92px;
+//  //    border-radius: 50%;
+//  //    background: url(../../img/trans_black.png);
+//  //    padding: 0 5px;
+//  //    i {
+//  //      display: block;
+//  //      font-size: 30px;
+//  //      margin-top: 18px;
+//  //    }
+//  p {
+//    color: #bbb;
+//    display: block;
+//    font-family: 'Lato', sans-serif;
+//    font-weight: 300;
+//    font-size: 12px;
+//    word-wrap: break-word;
+//    white-space: initial;
+//    margin: 5px 0 0 0;
+//  }
+//}
+.button-inner {
+    display: block;
+}
+
+.toolbar-background {
+    background: none !important;
+}
+
+ion-toolbar {
+    height: 150px;
+}
+
+.button-list {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+ion-toolbar.left_toolbar {
+    background: url(../assets/img/b2.jpg) !important;
+    padding: 0 !important;
+    background-size: 100% 100%;
+    height: 150px;
+}
+
+.item:first-child {
+    border-top: 0 none !important;
+}
+
+.admin_outer {
+    display: flex;
+    width: 100%;
+}
+
+ion-toolbar {
+    overflow: visible !important;
+}
+
+.left_bg {
+    background: url(../assets/img/grey-bg.jpg) !important;
+}
+
+.item {
+    background-color: transparent !important;
+    border-top: 1px solid #dddee2 !important;
+    border-bottom: 1px solid #f4f5f9 !important;
+}
+
+.item .item-inner {
+    border: none !important;
+}
+
+ion-label {
+    font-size: 14px !important;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+}
+
+.left_icons {
+    float: left;
+    margin-right: 15px;
+    width: 15px;
+    i {
+        color: orange;
+        font-size: 16px !important;
+    }
+}
+
+.right_arrow {
+    float: right;
+}
+
+.right {
+    float: right;
+}
+
+.item:hover {
+    //  background: #F1A158 !important;
+    //   color: #fff;
+    i {
+        color: #fff;
+    }
+}
+
+.item:last-child {
+    border-bottom: 1px solid #f4f5f9 !important;
+    border-top: 1px solid #dddee2 !important;
+}
+
+scroll-content:hover {
+    overflow-y: visible!important;
+}
+
+scroll-content {
+    overflow-y: hidden!important;
+}
+
+.admin_detail {
+    padding: 6px 15px;
+    float: left;
+    width: 100%;
+    background: url(../../img/bg-2.jpg);
+    input {
+        border: 0;
+        background: #fff;
+        margin: 10px 0px 5px 0px;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.login {
+    .login_img {
+        padding: 60px 0 30px 0;
+        text-align: center;
+        img {
+            max-width: 150px;
+        }
+    }
+    ion-item {
+        border: 0 !important;
+        padding: 0;
+        .item-inner {
+            border: none;
+            padding: 0;
+            .input-wrapper {
+                background: #fff;
+                height: 50px;
+                margin-bottom: 20px;
+                ion-label {
+                    display: inline-block;
+                    width: 50px;
+                    background: #FD6E00;
+                    margin: 0 10px 0 0;
+                    height: 50px;
+                    text-align: center;
+                    i {
+                        height: 50px;
+                        display: table-cell;
+                        color: #fff;
+                        vertical-align: middle;
+                        text-align: center;
+                        width: 50px;
+                        font-size: 16px;
+                    }
+                }
+                .text-input {
+                    margin: 0;
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+        }
+    }
+    button {
+        background: #FD6E00;
+        padding: 10px 20px !important;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: open sans;
+        font-weight: 400;
+        box-shadow: none;
+        border-radius: 0;
+        &:hover {
+            background: #cf5f0b;
+        }
+    }
+}
+
+.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+    box-shadow: none !important;
+}
+
+.header .col {
+    background-color: #FD6E00;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px
+}
+
+.stetement_dtl {
+    display: table;
+    width: 100%;
+}
+
+.stetement_dtl {
+    ion-label {
+        margin: 0 !important;
+    }
+    button {
+        padding: 0;
+        min-height: 100%;
+        border: 0 !important;
+        &:nth-child(even) {
+            background: #F7F7F7 !important;
+        }
+    }
+}
+
+.header {
+    .item-inner {
+        min-height: 100%;
+    }
+    ion-label {
+        margin: 0;
+    }
+    .col {
+        padding: 14px 2px;
+    }
+}
+
+.stetement_dtl .col {
+    border-bottom: 1px dotted #ddd;
+    font-size: 10px;
+}
+
+.col {
+    border-bottom-style: none;
+    border-right-style: none;
+    text-align: center;
+    padding: 15px 2px;
+    display: table-cell;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.col:first-child {
+    border-left: 0;
+}
+
+.page {
+    ion-navbar {
+        background: #333;
+    }
+}
+
+.main_content {
+    ion-item {
+        padding: 0;
+    }
+    .item-inner {
+        padding: 0 !important;
+        ion-label {
+            white-space: normal;
+        }
+    }
+    .stetement_dtl {
+        .item-md {
+            padding: 0;
+        }
+    }
+    &.stock {
+        font-size: 10px;
+    }
+}
+
+.stock {
+    td {
+        width: 8%;
+        vertical-align: top;
+        font-size: 8px;
+        padding: 8px 2px;
+        text-align: center;
+    }
+    th {
+        width: 8%;
+        vertical-align: top;
+        font-size: 9px;
+        background: #FF6600;
+        padding: 8px 2px;
+        text-align: center;
+        color: #fff;
+    }
+    tr:even {
+        background: #fefefe;
+    }
+}
+
+.table-stripedtable-stripedtable-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.item:last-child {
+    border: 0 !important;
+}
+
+ion-app {
+    .bg-page {
+        ion-list {
+            ion-item {
+                padding: 5px 10px;
+                border: 0 !important;
+                color: #fff;
+                margin-bottom: 1px;
+                background: #EDAA41 !important;
+                font-family: 'Roboto', sans-serif;
+                .label-md {
+                    margin: 5px;
+                }
+                .com_card_detail {
+                    td {
+                        color: #fff;
+                        font-size: 12px;
+                        padding: 0 10px 0 0px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    h4 {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        p {
+                            display: inline-block;
+                        }
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 400;
+                        font-family: 'Roboto', sans-serif;
+                        b {
+                            margin-right: 10px;
+                            display: inline-block;
+                            float: left;
+                        }
+                    }
+                    img {
+                        width: 70px;
+                        float: left;
+                        margin-right: 10px;
+                        border: 1px solid #f3a55b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input_group {
+    margin-bottom: 12px;
+    label {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+    }
+    input {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border: 0;
+        font-size: 12px;
+        color: #333;
+    }
+}
+
+.com_int_detail {
+    background: url(../assets/img/page-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    ion-item {
+        background: rgba(237, 170, 65, 0.5)!important;
+    }
+}

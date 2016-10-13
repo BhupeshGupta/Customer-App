@@ -1,0 +1,20 @@
+<ion-content padding class="getting-started" class="bg login">
+    <div class="login_img"> <img src="assets/img/logo.png"> </div>
+    <ion-list class="button-list">
+        <form novalidate #loginForm="ngForm">
+            <ion-item>
+                <ion-label><i class="fa fa-user"></i></ion-label>
+                <ion-input type="text" required placeholder="Enter Email/Phone No" name="username"> </ion-input>
+            </ion-item>
+            <ion-item>o
+                <ion-label><i class="fa fa-key"></i></ion-label>
+                <ion-input name="OTP Passcode" type="password" required placeholder="OTP Passcode"> </ion-input>
+            </ion-item>
+            <ion-row>
+                <ion-col>
+                    <button (click)="changePage($event)" full>Submit</button>
+                </ion-col>
+            </ion-row>
+        </form>
+    </ion-list>
+</ion-content>

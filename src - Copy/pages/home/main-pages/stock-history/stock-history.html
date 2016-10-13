@@ -1,0 +1,175 @@
+<ion-header class="page">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Stock History</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="main_content stock">
+    <ion-list>
+        <table class="table-striped table-bordered">
+            <tr>
+                <th>Date</th>
+                <th>Voucher Type</th>
+                <th>Voucher No</th>
+                <th>Billed Qty</th>
+                <th>Qty Delivered</th>
+                <th>Empty Received</th>
+                <th>Filled Balance</th>
+                <th>Empty Pending</th>
+            </tr>
+            <!--            <tr *ngFor="let item of items" (click)="itemTapped($event, item)">-->
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td>FC19</td>
+                <td>Opening</td>
+                <td>0</td>
+                <td>0 </td>
+                <td></td>
+                <td></td>
+                <td>26</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td></td>
+                <td>Totals</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td>FC19</td>
+                <td>Closing (Opening + Totals)</td>
+                <td>0</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td>26</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td>FC35</td>
+                <td>Opening</td>
+                <td>20</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td>9</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Goods Receipt </td>
+                <td>GR-16-5158</td>
+                <td>0</td>
+                <td>20</td>
+                <td>0</td>
+                <td>0</td>
+                <td>29</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Goods Receipt </td>
+                <td>GR-16-5510</td>
+                <td>0</td>
+                <td>40</td>
+                <td>0</td>
+                <td>-40</td>
+                <td>69</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Indent Invoice</td>
+                <td>16010309</td>
+                <td>25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>-15</td>
+                <td>69</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Indent Invoice</td>
+                <td>16010261</td>
+                <td>15</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>69</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Goods Receipt</td>
+                <td>GR-16-5606</td>
+                <td>0</td>
+                <td>20</td>
+                <td>0</td>
+                <td>-20</td>
+                <td>89</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Indent Invoice</td>
+                <td>Indent Invoice</td>
+                <td>20</td>
+                <td>0</td>
+                <td>0</td>
+                <td>20</td>
+                <td>89</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Goods Receipt</td>
+                <td>GR-16-5688</td>
+                <td>0</td>
+                <td>0</td>
+                <td>40</td>
+                <td>0</td>
+                <td>49</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td>09/01/16</td>
+                <td>Goods Receipt</td>
+                <td>GR-16-5704</td>
+                <td>0</td>
+                <td>0</td>
+                <td>43</td>
+                <td>131</td>
+                <td>129</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td></td>
+                <td>Totals</td>
+                <td>60</td>
+                <td>80</td>
+                <td>83</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td>FC35</td>
+                <td>Closing (Opening + Totals)</td>
+                <td>0</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td>6</td>
+            </tr>
+            <tr (click)="itemTapped($event)">
+                <td></td>
+                <td>EC47.5</td>
+                <td>Opening</td>
+                <td>0</td>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td>140</td>
+            </tr>
+        </table>
+    </ion-list>
+</ion-content>
