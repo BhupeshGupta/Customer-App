@@ -32,6 +32,7 @@ $ionicons-font-path: "../assets/fonts";
 @import "ionicons";
 $colors: ( primary: #387ef5, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, favorite: #69BB7B);
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800';
 .center {
     text-align: center;
 }
@@ -233,8 +234,10 @@ ion-app {
     background: none !important;
 }
 
-ion-toolbar {
-    height: 150px;
+.home_wrap {
+    ion-toolbar {
+        height: 150px;
+    }
 }
 
 .button-list {
@@ -299,14 +302,6 @@ ion-label {
 
 .right {
     float: right;
-}
-
-.item:hover {
-    //  background: #F1A158 !important;
-    //   color: #fff;
-    i {
-        color: #fff;
-    }
 }
 
 .item:last-child {
@@ -595,5 +590,13 @@ ion-app {
     background-repeat: no-repeat;
     ion-item {
         background: rgba(237, 170, 65, 0.5)!important;
+    }
+}
+
+page-add-communication-page {
+    ion-content {
+        ion-list {
+            padding: 15px;
+        }
     }
 }

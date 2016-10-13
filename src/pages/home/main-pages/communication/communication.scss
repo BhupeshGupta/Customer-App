@@ -1,9 +1,77 @@
-.getting-started {
+.header {
+    background: #333;
+}
 
-  p {
-    margin: 20px 0;
-    line-height: 22px;
-    font-size: 16px;
-  }
+.cmn_wrap {
+    background: #e8e8e8;
+    position: relative;
+    .add_item {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        button {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #FFA000;
+            color: #fff;
+            font-size: 20px;
+            &:hover {
+                background: #333;
+            }
+        }
+    }
+    ion-item {
+        padding: 0;
+        .item-inner {
+            margin: 10px;
+            margin-bottom: 10px;
+            box-shadow: 1px 2px 3px #ccc;
+            background: #fff !important;
+            padding: 10px;
+            ion-label {
+                margin: 0;
+                padding: 0;
+                h4 {
+                    margin: 0;
+                    color: #FFA000;
+                    display: inline-block;
+                    font-family: 'Open Sans', sans-serif;
+                    p {
+                        display: inline-block;
+                        margin-left: 5px;
+                        line-height: 20px;
+                        color: #333;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    font-family: 'Open Sans', sans-serif;
+                    line-height: 20px;
+                    color: #888;
+                    i {
+                        font-size: 12px;
+                        padding-right: 3px;
+                    }
+                    .fa-envelope {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
 
+.button {
+    background: #FFA000;
+    padding: 10px;
+    color: #fff;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 18px;
+    font-family: open sans;
+    font-weight: 600;
+    &:hover {
+        background: #333;
+    }
 }

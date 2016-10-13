@@ -14,13 +14,15 @@ import { CompanyDetailPage } from '../pages/home/company/company-detail/company-
 import { EmailPage } from '../pages/home/company/email/email';
 import { StockDetailsPage } from '../pages/home/main-pages/stock-history/stock-details/stock-details';
 import { CommunicationPage } from '../pages/home/main-pages/communication/communication';
-import { CommunicationDetails } from '../pages/home/main-pages/communication/communication-details/communication-details';
-
-
+import { CommunicationItemPage } from '../pages/home/main-pages/communication/communication-item-page/communication-item-page';
+import { CommunicationDetailPage } from '../pages/home/main-pages/communication/communication-detail-page/communication-detail-page';
+import { Storage } from '@ionic/storage';
+import { Data } from '../providers/data';
+ 
 @NgModule({
   declarations: [
     MyApp,
-	LoginPage,
+    LoginPage,
     HomePage,
     MainPage,
     AccountsPage,
@@ -33,7 +35,8 @@ import { CommunicationDetails } from '../pages/home/main-pages/communication/com
     EmailPage,
     StockDetailsPage,
     CommunicationPage,
-    CommunicationDetails
+    CommunicationItemPage,
+    CommunicationDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +44,7 @@ import { CommunicationDetails } from '../pages/home/main-pages/communication/com
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-	LoginPage,
+    LoginPage,
     HomePage,
     MainPage,
     AccountsPage,
@@ -54,8 +57,9 @@ import { CommunicationDetails } from '../pages/home/main-pages/communication/com
     EmailPage,
     StockDetailsPage,
     CommunicationPage,
-    CommunicationDetails
+    CommunicationItemPage,
+    CommunicationDetailPage
   ],
-  providers: []
+  providers: [Storage, Data]
 })
 export class AppModule {}

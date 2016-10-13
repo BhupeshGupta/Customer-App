@@ -1,0 +1,46 @@
+<ion-header class="header">
+    <ion-toolbar color="secondary">
+        <ion-title>
+            Add Item
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="close()">
+                <ion-icon name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Designation</ion-label>
+            <ion-input type="text" [(ngModel)]="cmn_post"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Phone No</ion-label>
+            <ion-input type="text" [(ngModel)]="cmn_phone"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Department</ion-label>
+            <ion-input type="text" [(ngModel)]="cmn_dep"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Description</ion-label>
+            <ion-input type="text" [(ngModel)]="description"></ion-input>
+        </ion-item>
+        <button class="button" full ion-button (click)="saveItem()">Save</button>s
+    </ion-list>
+
+
+
+</ion-content>

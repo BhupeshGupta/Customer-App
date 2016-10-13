@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
-import { CommunicationItemPage } from './communication-item-page/communication-item-page'
-import { CommunicationDetailPage } from './communication-detail-page/communication-detail-page';
-import { Data } from '../../../../providers/data';
+import { CommunicationItemPage } from '././communication-item-page/communication-item-page'
+import { CommunicationDetailPage } from '././communication-detail-page/communication-detail-page';
+import { Data } from '../../../providers/data';
  
 @Component({
   selector: 'page-communication',
