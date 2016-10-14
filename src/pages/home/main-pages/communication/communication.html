@@ -1,25 +1,37 @@
-<ion-header class="header">
-    <ion-navbar color="secondary">
+<ion-header class="header page ">
+    <ion-navbar>
         <ion-title>
             Communication
         </ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content class="cmn_wrap">
-    <ion-buttons class="add_item" end>
-        <button ion-button icon-only (click)="addItem()">
-            <i class="fa fa-pencil" aria-hidden="true"></i>
-        </button>
-    </ion-buttons>
+<ion-content class="cmn_wrap communication bg-page main_content ">
+    <button class="list_add" (click)="addItem()">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
     <ion-list>
-        <ion-item *ngFor="let item of items" (click)="viewItem(item)">
-            <div class="com_card_detail">
-                <h4>{{item.name}} <p> ({{item.cmn_post}})</p></h4>
-                <p><i class="fa fa-phone"> </i> {{item.cmn_phone}} <i class="fa fa-envelope "></i> {{item.email}}
-                </p>
-                <p><b><i class="fa fa-briefcase " aria-hidden="true "></i> Deals with  : </b> {{item.cmn_dep}}</p>
-            </div>
-        </ion-item>
+        <ion-item-sliding *ngFor="let item of items" (click)="viewItem(item)">
+            <ion-item>
+                <div class="com_card_detail">
+                    <div class="com_txt">
+                        <h4>{{item.name}}<p> ({{item.cmn_post}})</p></h4>
+                        <p><span><i class="fa fa-phone"></i> {{item.cmn_phone}}</span>
+                            <span><i class="fa fa-envelope"></i> {{item.email}}</span>
+                        </p>
+                        <p>
+                            <b><span><i class="fa fa-briefcase " aria-hidden="true "></i></span>Deals with  :</b> {{item.cmn_dep}}
+                        </p>
+                    </div>
+                    <div class="arrow_right">
+                        <span class="right_arrow"><i class="fa fa-angle-right"></i></span>
+                    </div>
+                </div>
+
+            </ion-item>
+            <ion-item-options>
+                <button danger (click)="removeItem(item)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </ion-item-options>
+        </ion-item-sliding>
     </ion-list>
 </ion-content>

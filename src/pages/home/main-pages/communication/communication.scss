@@ -1,60 +1,68 @@
-.header {
-    background: #333;
-}
-
-.cmn_wrap {
-    background: #e8e8e8;
-    position: relative;
-    .add_item {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-        button {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            background: #FFA000;
-            color: #fff;
-            font-size: 20px;
-            &:hover {
-                background: #333;
-            }
-        }
-    }
-    ion-item {
-        padding: 0;
-        .item-inner {
-            margin: 10px;
-            margin-bottom: 10px;
-            box-shadow: 1px 2px 3px #ccc;
-            background: #fff !important;
+ion-app {
+    .communication {
+        ion-list {
             padding: 10px;
-            ion-label {
-                margin: 0;
-                padding: 0;
-                h4 {
-                    margin: 0;
-                    color: #FFA000;
-                    display: inline-block;
-                    font-family: 'Open Sans', sans-serif;
+            ion-item-sliding {
+                background: none !important;
+            }
+            ion-item {
+                margin: 0 0 15px;
+                padding: 5px 10px;
+                border: 0 !important;
+                color: #fff;
+                background: #fff !important;
+                font-family: Roboto, sans-serif;
+                box-shadow: 1px 2px 2px #ccc;
+                .label-md {
+                    margin: 0 !important;
+                }
+                .com_card_detail {
+                    h4 {
+                        color: #FF4200;
+                        text-transform: uppercase;
+                        font-family: Roboto, sans-serif;
+                        font-weight: 500;
+                        p {
+                            display: inline-block;
+                            margin: 0 5px;
+                            color: #313131;
+                            text-transform: none;
+                            font-family: 'Open Sans', sans-serif;
+                        }
+                    }
                     p {
-                        display: inline-block;
-                        margin-left: 5px;
+                        color: #8b8b8d;
+                        font-size: 11px;
+                        font-weight: 400;
+                        font-family: 'Open Sans', sans-serif;
                         line-height: 20px;
-                        color: #333;
+                        span {
+                            margin-right: 5px;
+                            i {
+                                font-size: 11px;
+                                color: #8b8b8d;
+                                margin-right: 3px;
+                            }
+                        }
+                        b {
+                            margin-right: 10px;
+                            display: inline-block;
+                            float: left;
+                        }
                     }
                 }
-                p {
-                    font-size: 12px;
-                    font-family: 'Open Sans', sans-serif;
-                    line-height: 20px;
-                    color: #888;
+                .com_txt {
+                    display: table-cell;
+                    width: 95%;
+                }
+                .arrow_right {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-left: 15px;
                     i {
-                        font-size: 12px;
-                        padding-right: 3px;
-                    }
-                    .fa-envelope {
-                        margin-left: 8px;
+                        font-size: 25px;
+                        color: #8b8b8d;
+                        text-align: right;
                     }
                 }
             }
@@ -62,16 +70,16 @@
     }
 }
 
-.button {
-    background: #FFA000;
-    padding: 10px;
-    color: #fff;
-    margin-top: 20px;
+.list_add {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
     height: 50px;
-    font-size: 18px;
-    font-family: open sans;
-    font-weight: 600;
-    &:hover {
-        background: #333;
+    width: 50px;
+    border-radius: 50%;
+    background: #FF4200;
+    color: #fff;
+    i {
+        font-size: 20px;
     }
 }
