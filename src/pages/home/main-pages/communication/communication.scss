@@ -4,9 +4,20 @@ ion-app {
             padding: 10px;
             ion-item-sliding {
                 background: none !important;
+                margin: 0 0 15px;
+                .danger {
+                    background: red;
+                    padding: 0 11px;
+                    button {
+                        background: none;
+                        i {
+                            color: #fff;
+                            font-size: 24px;
+                        }
+                    }
+                }
             }
             ion-item {
-                margin: 0 0 15px;
                 padding: 5px 10px;
                 border: 0 !important;
                 color: #fff;
@@ -59,6 +70,7 @@ ion-app {
                     display: table-cell;
                     vertical-align: middle;
                     padding-left: 15px;
+                    cursor: pointer;
                     i {
                         font-size: 25px;
                         color: #8b8b8d;
@@ -79,6 +91,7 @@ ion-app {
     border-radius: 50%;
     background: #FF4200;
     color: #fff;
+    z-index: 1;
     i {
         font-size: 20px;
     }

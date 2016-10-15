@@ -7,7 +7,8 @@ import { NavController, ViewController } from 'ionic-angular';
 })
 export class CommunicationItemPage {
  
-  name;
+  fname;
+  lname;
   cmn_post;
   cmn_phone;
   email;
@@ -23,7 +24,8 @@ export class CommunicationItemPage {
   saveItem(){
  
     let newItem = {
-      name: this.name,
+      fname: this.fname,
+      lname: this.lname,
       cmn_post: this.cmn_post,
       cmn_phone: this.cmn_phone,
       email: this.email,

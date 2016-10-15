@@ -10,41 +10,14 @@
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-<!--
-<ion-content class="bg-page">
-    <ion-list>
-        <ion-item>
-            <ion-label floating>Name</ion-label>
-            <ion-input type="text" [(ngModel)]="name"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Designation</ion-label>
-            <ion-input type="text" [(ngModel)]="cmn_post"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Phone No</ion-label>
-            <ion-input type="text" [(ngModel)]="cmn_phone"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Email</ion-label>
-            <ion-input type="text" [(ngModel)]="email"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Department</ion-label>
-            <ion-input type="text" [(ngModel)]="cmn_dep"></ion-input>
-        </ion-item>
-        <button class="button" full ion-button (click)="saveItem()">Save</button>s
-    </ion-list>
-</ion-content>
--->
 <ion-content class="bg-page">
     <ion-card class="com_card_detail">
         <ion-card-content>
             <div class="input_group">
-                <input type="text" [(ngModel)]="name" placeholder="First Name">
+                <input type="text" [(ngModel)]="fname" placeholder="First Name">
             </div>
             <div class="input_group">
-                <input type="text" placeholder="Last Name">
+                <input type="text" [(ngModel)]="lname" placeholder="Last Name">
             </div>
             <div class="input_group">
                 <input type="text" placeholder="Owner" [(ngModel)]="cmn_post">
@@ -58,7 +31,7 @@
             <div class="input_group">
                 <input type="text" placeholder="Deals" [(ngModel)]="cmn_dep">
             </div>
-            <div class="com_button" full ion-button (click)="saveItem()">
+            <div class="com_button" ion-button (click)="saveItem()">
                 <button class="btn"> Save</button>
             </div>
         </ion-card-content>

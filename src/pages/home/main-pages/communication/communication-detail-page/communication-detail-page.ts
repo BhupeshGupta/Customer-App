@@ -7,7 +7,8 @@ import { NavParams } from 'ionic-angular';
 })
 export class CommunicationDetailPage {
  
-  name;
+  fname;
+  lname;
   cmn_post;
   cmn_phone;
   email;
@@ -19,7 +20,8 @@ export class CommunicationDetailPage {
   }
  
   ionViewDidLoad() {
-    this.name = this.navParams.get('item').name;
+    this.fname = this.navParams.get('item').fname;
+    this.lname = this.navParams.get('item').lname;
     this.cmn_post = this.navParams.get('cmn_post').cmn_post;
     this.cmn_phone = this.navParams.get('cmn_phone').cmn_name;
     this.email = this.navParams.get('email').email;
