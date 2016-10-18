@@ -1,0 +1,31 @@
+/* do not group these rules */
+
+*::-webkit-input-placeholder {
+    color: #999;
+}
+
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #999;
+}
+
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #999;
+}
+
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #999;
+}
+
+textarea:focus,
+input:focus {
+    color: #000;
+}
+
+input,
+select,
+textarea {
+    color: #000;
+}

@@ -1,23 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { NavController, ViewController,NavParams } from 'ionic-angular';
+import { Data } from '../../../../../providers/data';
  
 @Component({
-  selector: 'page-add-communication-page',
+  selector: 'communication',
   templateUrl: 'communication-item-page.html'
 })
 export class CommunicationItemPage {
- 
-  fname;
-  lname;
-  cmn_post;
-  cmn_phone;
-  email;
-  cmn_dep;
-  description;    
     
-    
-    
-  constructor(public navCtrl: NavController, public view: ViewController) {
+//     public item = {
+//      fname: '',
+//      lname: '',
+//      cmn_post: '',
+//      cmn_phone: '',
+//      email: '',
+//      cmn_dep: '',
+//      description: ''  
+//    
+//     }
+  constructor(public navCtrl: NavController, public view: ViewController,public navParams: NavParams,public dataService: Data) {
+      this.item = navParams.get('item');
  
   }
  

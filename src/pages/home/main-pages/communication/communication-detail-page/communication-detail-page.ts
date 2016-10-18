@@ -22,10 +22,10 @@ export class CommunicationDetailPage {
   ionViewDidLoad() {
     this.fname = this.navParams.get('item').fname;
     this.lname = this.navParams.get('item').lname;
-    this.cmn_post = this.navParams.get('cmn_post').cmn_post;
-    this.cmn_phone = this.navParams.get('cmn_phone').cmn_name;
-    this.email = this.navParams.get('email').email;
-    this.cmn_dep = this.navParams.get('cmn_dep').cmn_dep;
+    this.cmn_post = this.navParams.get('item').cmn_post;
+    this.cmn_phone = this.navParams.get('item').cmn_name;
+    this.email = this.navParams.get('item').email;
+    this.cmn_dep = this.navParams.get('item').cmn_dep;
     this.description = this.navParams.get('item').description;
   }
  
